@@ -1,0 +1,37 @@
+-------------Scenario 2---------------
+
+Using 0 attacks:
+
+
+
+Flow on arc B -> End: 1.00
+Flow on arc C -> B: 1.00
+Flow on arc Start -> C: 1.00
+
+----------
+Total cost = 13.00 (primal) 13.00 (dual)
+
+Using 1 attacks:
+
+Interdict arc Start -> C
+
+
+Flow on arc B -> End: 1.00
+Flow on arc Start -> B: 1.00
+
+----------
+Total cost = 19.00 (primal) 19.00 (dual)
+
+Using 2 attacks:
+
+Interdict arc B -> End
+Interdict arc D -> End
+
+Remaining supply on node Start: 1.00
+Remaining demand on node End: 1.00
+
+
+----------
+Total cost = 100.00 (primal) 100.00 (dual)
+---------------------------------------------------
+
