@@ -3,12 +3,16 @@
 # Author: Aksel Kristiansen Borgmo
 # General shell script for automation of scenario executions on Solstorm Cluster
 
+
+# Parameters to set by the user:
+Scenarios=(1 2 3 4)
+Threading="false"
+
+#Fixed code:
 projectDir="${PWD}"
 Nodes=("$@")
 N=${#Nodes[@]}
-Scenarios=(1 2 3 4)
 M=${#Scenarios[@]}
-Threading="false"
 s=$(( $M / $N ))
 
 for (( i=0; i<$N; i++ ))
